@@ -4,6 +4,8 @@ A guided pi skill for learning how to build pi extensions by creating a real pro
 
 Workspace Sentinel starts as a tiny project-local extension that announces when it loads, then grows module by module into a useful workflow assistant with slash commands, custom tools, safety gates, state, UI, custom rendering, and package-ready structure.
 
+Based on the [Angular AI Tutor](https://github.com/angular/ai-tutor) agent.
+
 ## Who this is for
 
 Use this if you want to learn how pi extensions work by building one yourself instead of reading API docs in isolation.
@@ -17,6 +19,39 @@ The tutor is intentionally interactive:
 - It tracks your tutorial directory, current module, and experience level in local skill state.
 
 The tutor does **not** normally write the tutorial code for you. If you ask for setup help, hints, step-by-step guidance, skipping, or auto-completion, it can help more directly.
+
+## Installation
+
+```bash
+pi install git:github.com/VMaston/pi-extension-tutor
+```
+
+Then reload pi and start the tutor:
+
+```text
+/reload
+/skill:pi-extension-tutor
+```
+
+## Recommended tutorial setup
+
+For best results, start pi from the directory where you want to build Workspace Sentinel. pi discovers project-local extensions from the current working directory.
+
+Example:
+
+```bash
+mkdir -p ~/dev/workspace-sentinel-tutorial
+cd ~/dev/workspace-sentinel-tutorial
+pi
+```
+
+Then invoke:
+
+```text
+/skill:pi-extension-tutor
+```
+
+If the tutor does not have a valid tutorial directory recorded yet, it can offer to create the tutorial project structure and install local development dependencies for you.
 
 ## What you will build
 
@@ -74,39 +109,6 @@ By the end, Workspace Sentinel can include:
 16. **Widgets, Autocomplete, and Editor UX** — add lightweight UX enhancements.
 17. **Custom Messages and Rendering** — emit custom rendered status/report messages.
 18. **Package-Ready Distribution** — prepare the extension as an installable pi package.
-
-## Installation
-
-```bash
-pi install git:github.com/VMaston/pi-extension-tutor
-```
-
-Then reload pi and start the tutor:
-
-```text
-/reload
-/skill:pi-extension-tutor
-```
-
-## Recommended tutorial setup
-
-For best results, start pi from the directory where you want to build Workspace Sentinel. pi discovers project-local extensions from the current working directory.
-
-Example:
-
-```bash
-mkdir -p ~/dev/workspace-sentinel-tutorial
-cd ~/dev/workspace-sentinel-tutorial
-pi
-```
-
-Then invoke:
-
-```text
-/skill:pi-extension-tutor
-```
-
-If the tutor does not have a valid tutorial directory recorded yet, it can offer to create the tutorial project structure and install local development dependencies for you.
 
 ## Local state
 
