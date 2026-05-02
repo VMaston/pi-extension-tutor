@@ -77,8 +77,6 @@ By the end, Workspace Sentinel can include:
 
 ## Installation
 
-After this repository is published to GitHub, install it with:
-
 ```bash
 pi install git:github.com/VMaston/pi-extension-tutor
 ```
