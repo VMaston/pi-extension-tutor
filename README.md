@@ -53,28 +53,6 @@ Then invoke:
 
 If the tutor does not have a valid tutorial directory recorded yet, it can offer to create the tutorial project structure and install local development dependencies for you.
 
-## What you will build
-
-The tutorial uses a project-local pi extension at:
-
-```text
-.pi/extensions/workspace-sentinel/index.ts
-```
-
-By the end, Workspace Sentinel can include:
-
-- load notifications and lifecycle status
-- a `/sentinel` slash command
-- custom LLM-callable tools
-- streaming scans with `pi.exec()`
-- custom tool rendering
-- bash and file-safety hooks
-- input transformation and prompt/context injection
-- branch-aware state reconstruction
-- session metadata helpers
-- custom UI/dashboard pieces
-- package-ready distribution
-
 ## Learning path
 
 ### Phase 1: Extension Foundations
@@ -109,6 +87,28 @@ By the end, Workspace Sentinel can include:
 16. **Widgets, Autocomplete, and Editor UX** — add lightweight UX enhancements.
 17. **Custom Messages and Rendering** — emit custom rendered status/report messages.
 18. **Package-Ready Distribution** — prepare the extension as an installable pi package.
+
+## What you will build
+
+The tutorial uses a project-local pi extension at:
+
+```text
+.pi/extensions/workspace-sentinel/index.ts
+```
+
+By the end, Workspace Sentinel can include:
+
+- load notifications and lifecycle status
+- a `/sentinel` slash command
+- custom LLM-callable tools
+- streaming scans with `pi.exec()`
+- custom tool rendering
+- bash and file-safety hooks
+- input transformation and prompt/context injection
+- branch-aware state reconstruction
+- session metadata helpers
+- custom UI/dashboard pieces
+- package-ready distribution
 
 ## Local state
 
