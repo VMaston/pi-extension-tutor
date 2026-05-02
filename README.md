@@ -118,43 +118,8 @@ The skill keeps small per-user progress state in:
 skills/pi-extension-tutor/progress.json
 ```
 
-That file should not be committed or published. It records only:
+It records:
 
 - tutorial directory
 - current module hint
 - experience level
-
-The committed default state template lives at:
-
-```text
-skills/pi-extension-tutor/references/state_default.json
-```
-
-## Development
-
-The skill content lives in:
-
-```text
-skills/pi-extension-tutor/
-```
-
-Package metadata is in:
-
-```text
-package.json
-```
-
-The package is discoverable by pi because `package.json` contains:
-
-```json
-{
-    "keywords": ["pi-package"],
-    "pi": {
-        "skills": ["./skills"]
-    }
-}
-```
-
-## Security note
-
-pi skills can instruct an agent to run commands or edit files. Review skill content before installing third-party skills or pi packages.
