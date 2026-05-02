@@ -116,7 +116,7 @@ Skill content lives in [`skills/pi-extension-tutor/`](skills/pi-extension-tutor/
 
 The tutor's longer instructional material and default state template live in [`skills/pi-extension-tutor/references/`](skills/pi-extension-tutor/references/).
 
-The skill keeps small per-user progress state in `skills/pi-extension-tutor/progress.json`.
+The skill creates & updates the learner progress state in `skills/pi-extension-tutor/progress.json`.
 
 It records:
 
