@@ -110,13 +110,13 @@ By the end, Workspace Sentinel can include:
 - custom UI/dashboard pieces
 - package-ready distribution
 
-## Local state
+## Development
 
-The skill keeps small per-user progress state in:
+Skill content lives in [`skills/pi-extension-tutor/`](skills/pi-extension-tutor/).
 
-```text
-skills/pi-extension-tutor/progress.json
-```
+The tutor's longer instructional material and default state template live in [`skills/pi-extension-tutor/references/`](skills/pi-extension-tutor/references/).
+
+The skill keeps small per-user progress state in `skills/pi-extension-tutor/progress.json`.
 
 It records:
 
