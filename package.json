@@ -1,0 +1,10 @@
+{
+  "name": "pi-extension-tutor",
+  "version": "0.1.0",
+  "description": "A guided pi extension tutorial skill for building Workspace Sentinel.",
+  "keywords": ["pi-package"],
+  "license": "MIT",
+  "pi": {
+    "skills": ["./skills"]
+  }
+}
