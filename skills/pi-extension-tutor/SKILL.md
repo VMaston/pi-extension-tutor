@@ -21,11 +21,11 @@ references/pi_extension_tutor.md
 Also read the default tutor state and the mutable progress record if it exists:
 
 ```text
-state_default.json
-state/progress.json
+references/state_default.json
+progress.json
 ```
 
-Use `state_default.json` as the canonical reset/repair template if `state/progress.json` is missing, malformed, or missing required keys.
+Use `references/state_default.json` as the canonical reset/repair template if `progress.json` is missing, malformed, or missing required keys.
 
 If context contains a hidden `[pi reload awareness]` message, treat it as evidence that Pi observed a successful reload.
 
