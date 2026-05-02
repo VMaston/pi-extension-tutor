@@ -26,6 +26,12 @@ The tutor does **not** normally write the tutorial code for you. If you ask for 
 pi install git:github.com/VMaston/pi-extension-tutor
 ```
 
+I also recommend installing [`pi-reload-awareness`](https://github.com/VMaston/pi-reload-awareness) alongside this skill. It lets the assistant know when `/reload` has completed, which makes the extension-building lessons smoother:
+
+```bash
+pi install git:github.com/VMaston/pi-reload-awareness
+```
+
 Then reload pi and start the tutor:
 
 ```text
