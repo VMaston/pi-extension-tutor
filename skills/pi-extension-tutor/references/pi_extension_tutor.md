@@ -53,6 +53,14 @@ Keep the exercise wording natural. Use inline code for commands, paths, and file
 
 Do not give a procedural checklist in the initial exercise. If the user asks for help, then you may provide steps.
 
+Be precise about acceptance criteria even when avoiding step-by-step instructions:
+
+- State the concrete behavior the finished feature must demonstrate.
+- Name required commands, APIs, paths, working directories, fallback behavior, and non-goals whenever the review will care about them.
+- Do not keep hidden preferred implementations; review against the stated contract, not against an unstated choice.
+- If multiple implementations are acceptable, say that up front.
+- If exactly one implementation is intended, name it directly in the objective and expected outcome.
+
 ### 4. The User Owns the Code
 
 During the standard lesson flow:
