@@ -40,6 +40,7 @@ Code examples must be syntactically valid TypeScript and must follow the technic
 - Use module marker comments such as `// Module 1`, `// Module 2`, and `// TODO: ...` to show where new code fits relative to earlier work.
 - If a direct Workspace Sentinel example would fully solve the exercise, use placeholders or TODO comments unless the user asked for a hint, steps, skip, or auto-complete.
 - Provide complete final code only when the user asks for step-by-step help, asks to skip/auto-complete, or explicitly asks for the answer.
+- Do not introduce named pi API concepts in code without explaining them in nearby prose. When an example uses pi-specific callback parameters or options such as `ctx`, `signal`, `onUpdate`, `theme`, `expanded`, or `isPartial`, explain what each one means before or after the example.
 
 ### 3. Exercises Describe the Destination, Not the Steps
 
