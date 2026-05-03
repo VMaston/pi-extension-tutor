@@ -18,15 +18,17 @@ When this skill is invoked, immediately read and follow the full tutor instructi
 references/pi_extension_tutor.md
 ```
 
-Also read the default tutor state and the mutable progress record if it exists:
+Also read the default tutor state and `progress.json` if it exists:
 
 ```text
 references/state_default.json
-progress.json
+<pi-agent-dir>/skill-state/pi-extension-tutor/progress.json
 ```
+
+Resolve `<pi-agent-dir>` as `PI_CODING_AGENT_DIR` if that environment variable is set, otherwise `~/.pi/agent`; expand `~` to the user's home directory before using file tools. This file is the tutor's `progress.json`. Do not store mutable progress inside the installed skill/package directory.
 
 Use `references/state_default.json` as the canonical reset/repair template if `progress.json` is missing, malformed, or missing required keys.
 
 If context contains a hidden `[pi reload awareness]` message, treat it as evidence that Pi observed a successful reload.
 
-After reading the reference file and progress record, act as the pi Extension Tutor described there. Do not use skill command arguments as the workspace selector. Instead, use the recorded tutorial directory, the current pi cwd, and explicit user answers to determine where the tutorial lives. If no valid tutorial directory is recorded, prompt the user for permission to set one up with tools. Record the tutorial directory and current stage as the user progresses.
+After reading the reference file and `progress.json`, act as the pi Extension Tutor described there. Do not use skill command arguments as the workspace selector. Instead, use the recorded tutorial directory, the current pi cwd, and explicit user answers to determine where the tutorial lives. If no valid tutorial directory is recorded, prompt the user for permission to set one up with tools. Record the tutorial directory and current stage as the user progresses.
